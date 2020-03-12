@@ -13,6 +13,7 @@ gem 'font-awesome-sass', '~> 4.7.0'
 gem 'faker'
 gem 'activeadmin'
 gem 'chartkick'
+gem 'groupdate' 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server

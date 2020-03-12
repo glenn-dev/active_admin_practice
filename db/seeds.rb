@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 AdminUser.destroy_all
 User.destroy_all
-Comment.derstroy_all
+Comment.destroy_all
 
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
 
@@ -16,10 +16,11 @@ AdminUser.create!(email: 'admin@example.com', password: 'password', password_con
     email: "user_#{i}@gmail.com",
     password: '123456'
   })
-
+  
   10.times do |i|
     Comment.create({
       content: Faker::Lorem.paragraph,
       created_at: Faker::Number.number(digits: 1).to_i.day.ago
-    })
+      })
+  end
 end

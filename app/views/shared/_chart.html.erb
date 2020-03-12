@@ -1,3 +1,3 @@
 <%= javascript_include_tag "https://www.google.com/jsapi", "chartkick" %>
-<% my_chart = {"ejemplo1": 20, "ejemplo2": 30} %>
+<% my_chart = Comment.group_by_day(:created_at).count %>
 <%= column_chart my_chart %>
